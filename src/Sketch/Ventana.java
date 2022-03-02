@@ -22,7 +22,7 @@ public class Ventana extends JFrame {
    }
     
     private void iniciar(){
-    JPanel panel = new JPanel();
+    JPanel panel = new MotionPanel(this);
     panel.setLayout(null);
     panel.setBackground(new Color(0,0,0,0));
     this.getContentPane().add(panel);
