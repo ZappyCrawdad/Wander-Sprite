@@ -36,11 +36,13 @@ public class Ventana_Main extends JFrame {
     boton2.setBounds(90, 5, 80, 40);
     panel.add(boton2);
     
+    JFrame.setDefaultLookAndFeelDecorated(true);
     Ventana v2 = new Ventana();
+    v2.setUndecorated(true);
+    v2.setBackground(new Color(0,0,0,0));
     
     boton1.addActionListener(new ActionListener(){//Implementación para la función de abrir la otra ventana.
         public void actionPerformed(ActionEvent e){
-            
             v2.setVisible(true);
         }
     });
